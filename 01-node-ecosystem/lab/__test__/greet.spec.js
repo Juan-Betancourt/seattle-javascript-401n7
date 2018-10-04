@@ -10,11 +10,10 @@ describe('Greet Module', () => {
     expect(greetPerson).toBe(null);
   });
 
-
-
-
-
-
-
+  it('Write a test that expects hello world', () => {
+    let greetPerson = hello.greet('world');
+    console.log(greetPerson);
+    expect(greetPerson).toEqual('Hello, world');
+  });
 
 });
