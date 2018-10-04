@@ -1,43 +1,33 @@
-![CF](http://i.imgur.com/7v5ASc8.png) 01: Node Ecosystem
-========================================================
+# Lab-01 Node Ecosystem
+Testing node modules and setting up Travis integration.
 
-## Implementation
-* Create a file called `index.js` that requires both the greet and arithmetic modules.
-* Use this file to "greet" and perform math operations using the imported functions from the 2 modules
-* `console.log()` the return values
+**Author**: James McDaniel, Juan Betancourt
+**Version**: 1.9.0
 
-### Greet Module
-Create a NodeJS module in the `lib` directory named `greet.js`.  This module should export a single function.
-* The `greet` function should have a single parameter (arity of one) that should expect a string as it's input
-* The `greet` function should return the input name, concatenated with "hello ": eg. ("hello susan")
-* The `greet` function should return `null` if the input is not a string
+## Overview
 
-#### Greet Module Tests
-* Use the faker module to randomize input
-* Write a test that expects the greet module to return `null` when you supply non-string values
-* Write a test the expects the greet module to return `'hello world'`
-  * This should happen when invoked with `'world'` as the first argument
+This practice provides the developer with the accessibility and practice to the Node ecosystem while working with Travis for continous testing integration.
 
-### Arithmetic Module
-Create a NodeJS module in the `lib` directory named `arithmetic.js`. This module exports an object and should have `add` and `sub` methods that implement addition and subtraction.
-* The `add` method should have a 2 parameters (airty of two)
-  * `if` either argument is a non-number the function should return `null`
-  * `else` return the sum of the 2 numbers
-* The `sub` method should have 2 parameters (airty of two)
-  * `if` either argument is a non-number the function should return `null`
-  * `else` return the second parameter subtracted from the first parameter
+## Getting Started
+The user must utilize the language of JavaScript and node.js with the package of Faker. Additional Travis provides a continous integration of testing to the code presented by the developers.
 
+## Architecture
+Working on this first lab, lab-01, requires the following to successful run it.
+###### 1. Languages
+* JavaScript / node.js
+###### 2. Packages
+* Faker
+###### 4. Others
+* Travis
 
-#### Arithmetic Module Tests
-* Use the faker module to randomize input
-* Test each method for proper use (invoked with number arguments)
-* Test each method for improper use (invoked with one or more non-number arguments)
+## Credits and Collaborations
+This assignment was cloned from the Code Fellows JavaScript 401.
 
+## Time Spent on Project
+Four hours were spent on this project.
 
-### Stretch Goals
-* Refactor the arithmetic module to support multiply and divide (be careful to not divide by zero!)
-* Refactor the arithmetic module to allow for an array of params so that you can do deeper calculations
+## PR Link
+* https://github.com/Juan-Betancourt/seattle-javascript-401n7/pull/3
 
-
-### Documentation
-In your README.md file, describe the exported values of each module defined in your `lib` directory. Every function description should include it's airty (expected number of parameters), the expected data for each parameter (data-type and limitations), and the expected output behavior (for both valid and invalid use). Feel free to include any additional information that you would like.
+## Travis Link
+* https://travis-ci.org/Juan-Betancourt/seattle-javascript-401n7/branches
