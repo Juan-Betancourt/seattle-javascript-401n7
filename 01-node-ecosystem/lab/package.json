@@ -1,0 +1,18 @@
+{
+  "name": "lab",
+  "version": "1.0.0",
+  "description": "![CF](http://i.imgur.com/7v5ASc8.png) 01: Node Ecosystem ========================================================",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "jest --verbose --coverage"
+  },
+  "author": "James and J.",
+  "license": "MIT",
+  "dependencies": {
+    "faker": "^4.1.0",
+    "jest": "^23.6.0"
+  }
+}
