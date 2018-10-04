@@ -1,6 +1,13 @@
-'use strict'
+'use strict';
 
-const math = require('../lib/arithmetic.js')
+const math = require('../lib/arithmetic.js');
+
+const faker = require('faker');
+
+let numA = faker.fake("{{random.number}}");
+let numB = faker.fake("{{random.number}}");
+let sumAB = numA + numB;
+console.log(sumAB);
 
 describe('Math Module', () => {
 
@@ -28,4 +35,14 @@ describe('Math Module', () => {
     let addFunction = math.addFunction(11, 12)
     expect(addFunction).toEqual(23)
   })
+
+  it('Run a test that output random numbers', () => {
+    let numA = faker.fake("{{random.number}}");
+    let numB = faker.fake("{{random.number}}");
+    let addFunction = math.addFunction(numA, numB)
+    expect(addFunction).toEqual(numA+numB)
+  })
+
 });
+
+

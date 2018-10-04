@@ -1,4 +1,9 @@
-'use strict'
+'use strict';
+
+const faker = require('faker');
+
+let c = faker.fake('{{random.number}}')
+console.log(c);
 
 module.exports = {
   addFunction: (a, b) => {
